@@ -1,7 +1,7 @@
 {
   "name": "JAYBOTz",
-  "version": "7.6.98",
-  "description": "𝙒𝘼 𝘽𝙊𝙏 𝙈𝘿",
+  "version": "7.7.0",
+  "description": "JAYBOTz",
   "depecrated": false,
   "main": "index.js",
   "directories": {
@@ -25,24 +25,24 @@
     "MD",
     "baileys-md"
   ],
-  "homepage": "https://github.com/EkaBotWhatsapp",
+  "homepage": "https://github.com/EkaBotWhatsapp/JAYBOTz-V3",
   "author": "JAYBOTz",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EkaBotWhatsapp"
+    "url": "https://github.com/EkaBotWhatsapp/JAYBOTz-V3"
   },
   "bugs": {
-    "url": "https://github.com/EkaBotWhatsapp"
+    "url": "https://github.com/EkaBotWhatsapp/JAYBOTz-V3"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@adiwajshing/baileys": "^4.1.0",
+    "@adiwajshing/baileys": "^4.3.0",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@bochilteam/scraper": "0.0.81",
     "acrcloud": "^1.4.0",
     "async": "^3.2.1",
     "awesome-phonenumber": "^2.66.0",
-    "axios": "^0.24.0",
+    "axios": "^0.21.1",
     "base64-to-image": "^1.0.2",
     "brainly-scraper": "^1.0.3",
     "brainly-scraper-v2": "^2.0.4-1",
@@ -62,6 +62,7 @@
     "form-data": "^4.0.0",
     "fs-extra": "^10.0.0",
     "g-i-s": "^2.1.6",
+    "github-from-package": "^0.0.0",
     "google-it": "^1.6.2",
     "got": "^11.8.2",
     "human-readable": "^0.2.1",
@@ -103,12 +104,11 @@
     "translate-google-api": "^1.0.4",
     "url": "^0.11.0",
     "url-regex": "^5.0.0",
-    "url-regex-safe": "^2.1.0",
+    "url-regex-safe": "^3.0.0",
     "util": "^0.12.4",
     "wa-sticker-formatter": "^4.0.14",
     "yargs": "^17.0.1",
     "yt-search": "^2.9.0",
     "zs-extract": "^1.4.1"
-  },
-  "devDependencies": {}
+  }
 }
