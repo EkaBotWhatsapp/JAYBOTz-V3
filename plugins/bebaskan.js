@@ -12,8 +12,10 @@ let handler = async (m, { conn, text}) => {
 handler.help = ['bebaskan']
 handler.tags = ['rpg']
 handler.command = /^bebaskan$/i
-handler.group = true
 
+handler.group = true
+handler.admin = true
+handler.botAdmin = true
 module.exports = handler*/
 
 let { MessageType } = require('@adiwajshing/baileys')
@@ -32,6 +34,9 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 handler.help = ['bebaskan']
 handler.tags = ['rpg']
 handler.command = /^bebaskan$/i
+
 handler.group = true
+handler.admin = true
+handler.botAdmin = true
 handler.fail = null
 module.exports = handler
