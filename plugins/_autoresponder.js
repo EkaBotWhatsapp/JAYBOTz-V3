@@ -10,29 +10,6 @@ handler.all = async function (m, { isBlocked }) {
 /* - - - - - - - Ini autoresponder - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-let regj = /(.jadibot)/i
-    let isJadibot = regj.exec(m.text)
-    let jadbot = [
-'🤖',
-'🤖',
-'🤖'
-]
-let jadibot = jadbot[Math.floor(Math.random() * jadbot.length)]
-    if (isJadibot && !m.fromMe) {
-    conn.sendMessage(m.chat, {
-        react: {
-          text: `${jadibot}`,
-          key: m.key,
-        }})
-   setTimeout(() => {
-        conn.reply(m.chat, `mau jadibot? Ketik .sewa ${jadibot}`, m)
-    }, 1000)
-    }
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-/* - - - - - - - Ini autoresponder - - - - - - - */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
 let regs = /(aku cinta kamu)/i
     let isCintaKamu = regs.exec(m.text)
     let cinmu = [

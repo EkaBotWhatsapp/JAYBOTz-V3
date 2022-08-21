@@ -6,14 +6,14 @@ handler.before = async function (m, { user, isBotAdmin, isAdmin }) {
   let chat = global.db.data.chats[m.chat]
   let isGroupLink = linkRegex.exec(m.text)
 
-  if (chat.antiLinkwame && isGroupLink) {
-    await m.reply(`*「 ANTI LINK WA.ME 」*\n\nDetected *${await conn.getName(m.sender)}* you have sent the WA.ME link!\n\nSorry you will be kicked from this group byee!`)
+  if (chat.antiLink && isGroupLink) {
+    await m.reply(`*「 ANTI LINK 」*\n\nDetected *${await conn.getName(m.sender)}* you have sent the group link!\n\nSorry you will be kicked from this group byee!`)
     if (isAdmin) return m.reply('*wah anjir , situ admin gabisa dikik 😢. hehe..*')
     if (!isBotAdmin) return m.reply('*Bot nya bukan admin, mana bisa ngekik 😐*')
-    let linkGC = ('https://wa.me/' + await conn.antilinkwame(m.chat))
+    let linkGC = ('http://wa.me/' + await conn.groupInviteCode(m.chat))
     let isLinkconnGc = new RegExp(linkGC, 'i')
     let isgclink = isLinkconnGc.test(m.text)
-    if (isgclink) return m.reply('*「 ANTI LINK WA.ME 」*\n\nItu Dilarang❗, Maaf kamu akan saya kik.\nKarena kirim Link👍')
+    if (isgclink) return m.reply('*「 ANTI LINK 」*\n\nItu Dilarang❗, Maaf kamu akan saya kik.\nKarena kirim Link👍')
     await conn.groupParticipantsUpdate(m.chat, [m.sender], "remove")
   }
   return true
