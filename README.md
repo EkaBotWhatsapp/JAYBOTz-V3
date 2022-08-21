@@ -3,10 +3,17 @@
 **GROUP JAYBOTz**
 
 
-#### Abil session
-| session | LINK | 
+#### Ambil session
+| session | LINK |
 |--------|--------|
-| **session.data.json** |[here]([https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest](https://replit.com/@GoyangSaja/sessiondatajson?v=1)) |
+| **session** |[here](https://replit.com/@GoyangSaja/sessiondatajson?v=1) |
+
+#### Heroku Buildpack
+| BuildPack | LINK |
+|--------|--------|
+| **FFMPEG** |[here](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
+| **IMAGEMAGICK** | [here](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
+
 
 
 #### Deploy to Heroku
