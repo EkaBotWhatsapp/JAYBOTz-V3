@@ -26,3 +26,10 @@ module.exports = handler
 function pickRandom(arr) {
   return arr[Math.floor(Math.random() * arr.length)]
 }
+handler.help = ['gimage <search>']
+handler.tags = ['internet']
+handler.command = /^(gimage|image)$/i
+handler.limit = true
+handler.premium = true
+
+module.exports = handler

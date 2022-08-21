@@ -801,11 +801,11 @@ Anda telah membuka *Gardenboxs crate* dan mendapatkan:${lksk > 0 ? `\nBibitmangg
                     let _lastimeki = (30000 - __lastimeki) 
                     let lastimeki = clockString(_lastimeki)
                     if (new Date - global.db.data.users[m.sender].lastopen > 30000) {
-                    let mm = 100000
-                    let me = 100000
+                    let mm = 200000000
+                    let me = 1000
                     let mp = 50
-                   // let mc = 50000
-                    let mci = 50000
+                   // let mc = 200000000
+                    let mci = 200000000
                     let Mochat = `
 Anda telah membuka *Cupon crate* dan mendapatkan:${mm > 0 ? `\nMoney: ${mm} *money*` : ''}${me > 0 ? `\nExp: ${me} *exp*` : ''}${mp > 0 ? `\nLimit: ${mp} *limit*` : ''}${mci > 0 ? `\nNabung Money: ${mci} *nabung money*` : ''}
 `.trim()

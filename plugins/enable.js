@@ -100,16 +100,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
           throw false
         }
       }
-      chat.antilink = isEnable
-      break 
-    case 'antilinkwame':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          global.dfail('admin', m, conn)
-          throw false
-        }
-      }
-      chat.antilinkwame = isEnable
+      chat.antiLink = isEnable
       break 
     case 'antisticker':
       if (m.isGroup) {
@@ -187,13 +178,13 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       global.opts['nyimak'] = isEnable
       break
-    case 'autoreadgc':
+    case 'autoread':
       isAll = true
       if (!isROwner) {
         global.dfail('rowner', m, conn)
         throw false
       }
-      global.opts['autoreadgc'] = isEnable
+      global.opts['autoread'] = isEnable
       break
     case 'pconly':
     case 'privateonly':
@@ -250,7 +241,7 @@ List option:
 ❗whitelistmycontacts
 ❗restrict
 ❗nyimak
-❗autoreadgc
+❗autoread
 ❗pconly
 ❗gconly
 ❗swonly

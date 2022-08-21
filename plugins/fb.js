@@ -1,29 +1,10 @@
-/*const fetch = require('node-fetch')
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-  if (!args[0]) throw `Masukkan URL Facebook yang ingin di download!\n\nContoh:${usedPrefix + command} https://www.facebook.com/alanwalkermusic/videos/277641643524720`
-  if (/^https?:\/\/.*(fb.watch|facebook.com)/i.test(m.text)) throw `url salah`
-
-  let res = await fetch(API('neoxr', '/api/fb', { url: args[0] }, 'apikey'))
-  if (!res.ok) throw eror
-  let json = await res.json()
-  if (!json.status) throw json
-  await m.reply(wait)
-  await conn.sendFile(m.chat, json.data.sd.url, '', `HD: ${json.data.hd.url}\nUkuran: ${json.data.hd.size}\n\n${watermark}`, m)
-}
-handler.help = ['fb'].map(v => v + ' <url>')
-handler.tags = ['downloader']
-
-handler.command = /^f((b|acebook)(dl|download)?(er)?)$/i
-
-handler.private = true
-handler.limit = true
-
-module.exports = handler*/
 let fetch = require('node-fetch')
 
 let handler = async (m, { conn, args }) => {
   if (!args[0]) throw 'Uhm...url nya mana?'
-  let res = await fetch(global.API('neoxr', '/api/fb', { url: args[0] }, 'apikey'))
+  let res = await fetch(global.API('zenzapis', '/downloader/facebook', {
+    url: args[0]
+  }, 'APIKEY'))
   if (res.status !== 200) {
     res.text()
     throw res.status
@@ -50,9 +31,7 @@ Size: ${contentSize || unknown}
 Durasi: ${clockString(+ new Date(duration))}
 Genre: ${genre || none}
 Kualitas: ${videoQuality ? videoQuality : unknown}
-
 ${description}
-
 Keyword: ${keywords || none}
 `.trim()
   conn.sendFile(m.chat, url, 'media-fb', caption, m)
@@ -62,7 +41,6 @@ handler.tags = ['downloader']
 
 handler.command = /^f((b|acebook)(dl|download)?(er)?)$/i
 
-handler.private = true
 module.exports = handler
 
 function clockString(ms) {
