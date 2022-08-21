@@ -3,7 +3,7 @@
 **GROUP JAYBOTz**
 
 
-#### Ambil session
+#### Get Session
 | session | LINK |
 |--------|--------|
 | **session** |[here](https://replit.com/@GoyangSaja/sessiondatajson?v=1) |
