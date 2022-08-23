@@ -32,7 +32,7 @@ let handler  = async (m, _2) => {
 }
 handler.help = ['> ', '=> ']
 handler.tags = ['advanced']
-handler.customPrefix = /^=?> /
+handler.customPrefix = /^=?> / #$%&.,< M
 handler.command = /(?:)/i
 handler.owner = true
 handler.mods = false

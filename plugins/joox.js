@@ -22,10 +22,10 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 }
 
 handler.help = ['joox'].map(v => v + ' <judul>')
-handler.tags = ['downloader']
+handler.tags = ['downloader', 'premium']
 handler.command = /^joox$/i
 handler.limit = true
-handler.premium = false
+handler.premium = true
 module.exports = handler
 
 const isUrl = (text) => {
@@ -54,7 +54,7 @@ capt = `*[ JOOX ]*\n\n▢ *Judul* : ${artist} - ${judul}\n▢ *Album* : ${album}
 })
 }
 handler.help = ['joox <query>']
-handler.tags = ['downloader']
+handler.tags = ['downloader', 'premium']
 handler.command = /^(joox)$/i
 handler.limit = true
 handler.premium = true

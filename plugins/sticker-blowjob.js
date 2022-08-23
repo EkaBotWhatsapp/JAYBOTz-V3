@@ -10,7 +10,7 @@ let handler = async(m, { conn }) => {
   throw stiker.toString()
 }
 handler.help = ['stickerblowjob']
-handler.tags = ['sticker']
+handler.tags = ['premium']
 handler.command = /^blowjob|stickerblowjob|stikerblowjob$/i
 
 handler.register = true

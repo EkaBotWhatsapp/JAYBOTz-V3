@@ -9,7 +9,7 @@ let handler = async(m, { conn, text }) => {
     else throw json
 }
 handler.help = ['xnxxsearch <query>']
-handler.tags = ['asupan']
+handler.tags = ['asupan', 'premium']
 handler.command = /^(xnxxsearch)$/i
 
 handler.private = true

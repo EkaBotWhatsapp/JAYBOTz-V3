@@ -18,11 +18,11 @@ let handler = async (m, { conn, command, args }) => {
   }
 }
 handler.help = ['google'].map(v => v + ' <search>')
-handler.tags = ['internet']
+handler.tags = ['internet', 'premium']
 handler.command = /^googlef?$/i
 handler.owner = false
 handler.mods = false
-handler.premium = false
+handler.premium = true
 handler.group = false
 handler.limit = true
 

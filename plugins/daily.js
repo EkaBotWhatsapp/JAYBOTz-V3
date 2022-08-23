@@ -1,7 +1,7 @@
 const free = 5000
-const prem = 10000
+const prem = 100000
 const moneyfree = 5000
-const moneyprem = 10000
+const moneyprem = 100000
 const timeout = 86400000
 
 let handler = async (m, { conn, isPrems }) => {
@@ -18,7 +18,7 @@ let handler = async (m, { conn, isPrems }) => {
 					}, timeout)
     } 
 handler.help = ['daily']
-handler.tags = ['rpgabsen']
+handler.tags = ['rpgabsen', 'premium']
 handler.command = /^(daily)$/i
 handler.owner = false
 handler.mods = false
