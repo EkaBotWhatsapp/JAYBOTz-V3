@@ -6,7 +6,7 @@
 #### Get Session
 | session | LINK |
 |--------|--------|
-| **session** |[here](https://replit.com/@GoyangSaja/sessiondatajson-1) |
+| **session** |[here](https://replit.com/@GoyangSaja/sessiondatajson-2) |
 
 
 #### Deploy to Heroku
