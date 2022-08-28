@@ -6,7 +6,7 @@
 #### Get Session
 | session | LINK |
 |--------|--------|
-| **session** |[here](https://replit.com/@GoyangSaja/sessionMD-bot-whatsapp#package.json) |
+| **session** |[here](https://replit.com/@GoyangSaja/sessionMD-bot-whatsapp) |
 
 
 #### Deploy to Heroku
